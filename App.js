@@ -12,15 +12,15 @@ export default function App() {
 
   return (
   <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName='onboarding'>
       <Stack.Screen name="onboarding" component={OnboardingScreen} options={{headerShown: false}}/>
       <Stack.Screen name='duolingo' component={Duolingo} options={{headerShown: false}} />
       <Stack.Screen name='numberValidation' component={NumberValidation} options={{headerShown: false}} />
-      <Stack.Screen name="verifyCode" component={VerifyCodeScreen} options={{ headerShown: false }} />
+      {/* <Stack.Screen name="verifyCode" component={VerifyCodeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="VerificationComplete" component={VerificationComplete} options={{ headerShown: false }} />
       <Stack.Screen name="emailVerificationInput" component={EmailVerificationInputScreen} options={{headerShown: false}} />
       <Stack.Screen name="emailSent" component={EmailSentScreen} options={{headerShown: false}} />
-      <Stack.Screen name="emailVerified" component={EmailVerifiedScreen} options={{headerShown: false}} />
+      <Stack.Screen name="emailVerified" component={EmailVerifiedScreen} options={{headerShown: false}} /> */}
     </Stack.Navigator>
   </NavigationContainer>
   );
