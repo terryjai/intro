@@ -8,19 +8,10 @@ const VerificationComplete = () => {
 
   return (
     <View style={styles.container}>
-      <Image
-        source={require("./../assets/v.png")}
-        style={styles.image}
-      />
+      <Image source={require("./../assets/v.png")} style={styles.image} />
       <Text style={styles.title}>Verification Complete</Text>
       <Text style={styles.subtitle}>Your phone number has been verified.</Text>
-      
-      <CustomButton
-        title="Continue"
-        textColor="white"
-        backgroundColor="#007B5D"
-        onPress={() => navigation.navigate("onboarding")}
-      />
+      <CustomButton title="Continue" textColor="white" backgroundColor="#007B5D" onPress={() => navigation.navigate("onboarding")} />
     </View>
   );
 };

@@ -21,56 +21,25 @@ const OnboardingScreen = () => {
           <Image source={require("./../assets/on1.png")} />
 
           <Text style={styles.title}>Multiple delivery options</Text>
-          <Text style={styles.description}>
-            Enjoy best in the market exchange rates
-          </Text>
-          <CustomButton
-            title={"Get started"}
-            textColor={"white"}
-            backgroundColor={"#007B5D"}
-            style={styles.buttonContainer}
-            onPress={()=>navigation.navigate('numberValidation')}
-          />
+          <Text style={styles.description}>Enjoy best in the market exchange rates</Text>
+          <CustomButton title={"Get started"} textColor={"white"} backgroundColor={"#007B5D"} style={styles.buttonContainer} onPress={()=>navigation.navigate('numberValidation')} />
         </View>
         <View style={styles.onboardingContainer}>
-          <Image
-            source={require("./../assets/on2.png")}
-            style={styles.on2Image}
-          />
+          <Image source={require("./../assets/on2.png")} style={styles.on2Image} />
 
           <Text style={styles.title}>Multiple delivery options</Text>
           <Text style={styles.description}>
-            Mobile money, Bank transfer and cash pick up
-          </Text>
-          <CustomButton
-            title={"Get started"}
-            textColor={"white"}
-            backgroundColor={"#007B5D"}
-            style={styles.buttonContainer}
-            onPress={()=>navigation.navigate('numberValidation')}
-          />
+            Mobile money, Bank transfer and cash pick up</Text>
+          <CustomButton title={"Get started"} textColor={"white"} backgroundColor={"#007B5D"} style={styles.buttonContainer} onPress={()=>navigation.navigate('numberValidation')} />
         </View>
         <View style={styles.onboardingContainer}>
           <Image source={require("./../assets/on3.png")} />
 
           <Text style={styles.title}>Customer friendly</Text>
-          <Text style={styles.description}>
-            Seamless and transparent customer experience at every step of
-            transfer
-          </Text>
+          <Text style={styles.description}> Seamless and transparent customer experience at every step of transfer</Text>
           <View style={styles.twoButtonContainer}>
-            <CustomButton
-              title={"Register"}
-              textColor={"white"}
-              backgroundColor={"#007B5D"}
-              buttonStyle={styles.twoButton}
-            />
-            <CustomButton
-              title={"Sign in"}
-              textColor={"white"}
-              backgroundColor={"#007B5D"}
-              buttonStyle={styles.twoButton}
-            />
+            <CustomButton title={"Register"} textColor={"white"} backgroundColor={"#007B5D"} buttonStyle={styles.twoButton} />
+            <CustomButton title={"Sign in"} textColor={"white"} backgroundColor={"#007B5D"} buttonStyle={styles.twoButton} />
           </View>
         </View>
       </Swiper>

@@ -56,15 +56,12 @@ const VerifyCodeScreen = () => {
       <View style={styles.timerContainer}>
         <Text style={styles.resendText}>
           Didn’t get the code?{" "}
-          <Text style={styles.resendLink} onPress={() => setTimer(45)}>
-            Resend it
-          </Text>
+          <Text style={styles.resendLink} onPress={() => setTimer(45)}>Resend it</Text>
         </Text>
         <Text style={styles.timer}>{timer}s</Text>
       </View>
 
       <CustomButton title="Done" textColor="White" backgroundColor="#007B5D" onPress={() => navigation.navigation("VerificationComplete")} />
-    
       </KeyboardAvoidingView>
   );
 };
