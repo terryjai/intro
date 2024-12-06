@@ -2,12 +2,14 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import CustomButton from "../components/CustomButton";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 
 const VerificationComplete = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} background= "#808080" />
       <Image source={require("./../assets/v.png")} style={styles.image} />
       <Text style={styles.title}>Verification Complete</Text>
       <Text style={styles.subtitle}>Your phone number has been verified.</Text>

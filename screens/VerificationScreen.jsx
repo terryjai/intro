@@ -3,6 +3,7 @@ import { Image, StyleSheet,Text, View, TextInput, TouchableOpacity, KeyboardAvoi
 import React from 'react'
 import { useNavigation } from "@react-navigation/native";
 import CustomButton from "../components/CustomButton";
+import { StatusBar } from "expo-status-bar";
 
 const VerifyCodeScreen = () => {
     const navigation = useNavigation();
@@ -32,6 +33,7 @@ const VerifyCodeScreen = () => {
 
   return (
     <KeyboardAvoidingView style={styles.container}>
+    <StatusBar translucent={true} background= "#808080" />
     <Text style={styles.title}>We just sent an SMS</Text>
     <Text style={styles.subtitle}>
     Enter the security code we sent to {"\n"} <Text style={styles.bold}>+32 123456789</Text>

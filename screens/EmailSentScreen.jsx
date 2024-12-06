@@ -2,12 +2,14 @@ import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import CustomButton from "../components/CustomButton";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 
 const EmailSentScreen = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} background= "#808080" />
       <Text style={styles.title}>Verify your email</Text>
       <Text style={styles.description}>Please check your inbox and tap the link in the email we’ve just sent to:</Text>
       <Text style={styles.email}>balogunkriku@gmail.com</Text>

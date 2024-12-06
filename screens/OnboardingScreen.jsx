@@ -4,6 +4,7 @@ import CustomButton from "../components/CustomButton";
 import Onboarding from "react-native-onboarding-swiper";
 import Swiper from "react-native-swiper";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 
 // npm i react-native-swiper
 
@@ -11,6 +12,7 @@ const OnboardingScreen = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} background= "#808080" />
       <Swiper
         paginationStyle={styles.paginationStyle}
         dotStyle={styles.dotStyle}

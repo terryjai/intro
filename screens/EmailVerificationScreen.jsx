@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity } from "react-nativ
 import React, { useState } from "react";
 import CustomButton from "../components/CustomButton";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 
 const EmailVerificationScreen = () => {
   const navigation = useNavigation();
@@ -9,6 +10,7 @@ const EmailVerificationScreen = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} background= "#808080" />
       <Text style={styles.title}>Let’s verify your email</Text>
       <Text style={styles.subtitle}>Your email</Text>
       <TextInput style={styles.input} placeholder="Enter your email" value={email} onChangeText={(text) => setEmail(text)} keyboardType="email-address" autoCapitalize="none" />

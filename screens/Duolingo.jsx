@@ -1,10 +1,12 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import CustomButton from "../components/CustomButton";
+import { StatusBar } from "expo-status-bar";
 
 const Duolingo = () => {
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} background= "#808080" />
       <Image source={require("./../assets/d-img.png")} style={styles.image} />
 
       <Text>duolingo</Text>

@@ -2,10 +2,12 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import PhoneNumberInput from '../components/PhoneNumberInput'
 import CustomButton from '../components/CustomButton'
+import { StatusBar } from "expo-status-bar";
 
 const NumberValidation = () => {
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} background= "#808080" />
         {/* TOP SECTION */}
       <View style={styles.flexedContent}>
         <TouchableOpacity>

@@ -2,12 +2,14 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import CustomButton from "../components/CustomButton";
 import { useNavigation } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
 
 const EmailVerifiedScreen = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} background= "#808080" />
       <Image source={require("../assets/verified.png")} style={styles.icon} />
       <Text style={styles.title}>Email verified</Text>
       <Text style={styles.description}>Your email address has been verified successfully.</Text>

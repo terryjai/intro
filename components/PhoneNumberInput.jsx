@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, FlatList } from 'react-native'
 import React, { useState } from 'react'
+import { StatusBar } from "expo-status-bar";
 
 
 
@@ -30,6 +31,7 @@ setDropDownVisible(false)
 
   return (
     <View style={styles.phoneContainer}>
+     <StatusBar translucent={true} background= "#808080" />
      <View style={styles.input}>
         <TouchableOpacity onPress={handleDropDown} style={styles.countryCode}>
             <Text style={styles.flag}>{selectedCountry.flag}</Text>
